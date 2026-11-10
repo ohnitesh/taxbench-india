@@ -20,6 +20,9 @@ reference:
 explanation: 'The threshold for professional fees is Rs 50,000. It was Rs 30,000 until 31 March 2025,
   under which 10% of 45,000 would have been deducted: that is the outdated answer.'
 sources:
+- title: 'Income Tax Department: section 393, Income-tax Act, 2025 (tax to be deducted at source)'
+  url: https://www.incometaxindia.gov.in/w/section-393-6
+  type: official
 - title: 'Pardeep Jha & Associates: TDS rate chart FY 2026-27, section 393'
   url: https://pardeepjha.com/blog/tds-rate-chart-fy-2026-27-section-393-income-tax-act-2025
   type: secondary
@@ -29,10 +32,7 @@ sources:
 - title: 'ClearTax: TDS and TCS changes from April 2025 (old and new thresholds)'
   url: https://cleartax.in/s/tds-and-tcs-changes-from-april-2025
   type: secondary
-see_also:
-- title: 'Income Tax Department: section 393, Income-tax Act, 2025'
-  url: https://wm.incometaxindia.gov.in/w/section-393-5
-verification: secondary
+verification: official
 as_of: '2026-11-10'
 law_effective_from: '2025-04-01'
 tags:

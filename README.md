@@ -35,8 +35,8 @@ Each case states its level in the `verification` field.
 
 | Level | Meaning | Cases |
 |---|---|---|
-| `official` | Checked against a government source that a maintainer opened and read | 18 |
-| `secondary` | Two independent professional sources agree; the official text is linked under `see_also` | 15 |
+| `official` | Checked against a government source that a maintainer opened and read | 27 |
+| `secondary` | Two independent professional sources agree; the official text is linked under `see_also` | 6 |
 | `computed` | Arithmetic or an algorithm, recomputed in CI by the reference calculators | 10 |
 
 Things to know before you rely on this:

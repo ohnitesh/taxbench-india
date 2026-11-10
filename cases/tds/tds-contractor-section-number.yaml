@@ -14,16 +14,16 @@ explanation: The Income-tax Act, 2025 gathers the TDS provisions for payments to
   393(1). Contractor payments are a table entry there. Section 194C belongs to the 1961 Act, which is
   the outdated answer.
 sources:
+- title: 'Income Tax Department: section 393, Income-tax Act, 2025 (tax to be deducted at source)'
+  url: https://www.incometaxindia.gov.in/w/section-393-6
+  type: official
 - title: 'Pardeep Jha & Associates: TDS rate chart FY 2026-27, section 393'
   url: https://pardeepjha.com/blog/tds-rate-chart-fy-2026-27-section-393-income-tax-act-2025
   type: secondary
 - title: 'Durgesh Chavda: TDS rate chart 2026-27, Income-tax Act 2025'
   url: https://www.durgeshchavda.com/insights/tds-rate-chart-2026-27/
   type: secondary
-see_also:
-- title: 'Income Tax Department: section 393, Income-tax Act, 2025'
-  url: https://wm.incometaxindia.gov.in/w/section-393-5
-verification: secondary
+verification: official
 as_of: '2026-11-10'
 law_effective_from: '2026-04-01'
 tags:

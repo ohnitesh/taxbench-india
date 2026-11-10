@@ -22,14 +22,14 @@ reference:
 explanation: 'Section 393(1), contractor entry: 2% where the payee is not an individual or HUF. A single
   sum above Rs 30,000 triggers deduction. 2% of 40,000 is 800.'
 sources:
+- title: 'Income Tax Department: section 393, Income-tax Act, 2025 (tax to be deducted at source)'
+  url: https://www.incometaxindia.gov.in/w/section-393-6
+  type: official
 - title: 'Pardeep Jha & Associates: TDS rate chart FY 2026-27, section 393'
   url: https://pardeepjha.com/blog/tds-rate-chart-fy-2026-27-section-393-income-tax-act-2025
   type: secondary
 - title: 'Durgesh Chavda: TDS rate chart 2026-27, Income-tax Act 2025'
   url: https://www.durgeshchavda.com/insights/tds-rate-chart-2026-27/
   type: secondary
-see_also:
-- title: 'Income Tax Department: section 393, Income-tax Act, 2025'
-  url: https://wm.incometaxindia.gov.in/w/section-393-5
-verification: secondary
+verification: official
 as_of: '2026-11-10'
