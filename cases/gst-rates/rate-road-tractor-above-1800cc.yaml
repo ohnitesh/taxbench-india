@@ -1,0 +1,22 @@
+id: rate-road-tractor-above-1800cc
+category: gst-rates
+title: Road tractor for semi-trailers above 1,800 cc
+question: A registered dealer in India sells a road tractor for semi-trailers with a 2,500 cc engine.
+  The supply is made, invoiced and paid for on 1 October 2025. What GST rate applies?
+answer_keys:
+  gst_rate_percent: the total GST rate as a number, for example 12 for 12%; use 0 for nil or exempt
+expected:
+  gst_rate_percent: 18
+stale_answer:
+  gst_rate_percent: 28
+explanation: Road tractors for semi-trailers with engine capacity above 1,800 cc are carved out of the
+  5% tractor rate and attract 18%, down from 28%.
+sources:
+- title: 'PIB: FAQs on the decisions of the 56th GST Council'
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163560&reg=3&lang=2
+  type: official
+verification: official
+as_of: '2026-11-10'
+law_effective_from: '2025-09-22'
+tags:
+- changed-rule

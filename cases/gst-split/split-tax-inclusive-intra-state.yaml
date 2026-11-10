@@ -1,0 +1,35 @@
+id: split-tax-inclusive-intra-state
+category: gst-split
+title: Back out tax from a tax-inclusive price, intra-State
+question: A shop in Jaipur, Rajasthan sells an item over the counter to a customer in Jaipur for Rs 11,800
+  inclusive of GST. The GST rate on the item is 18%. Work out the value before tax and the tax.
+answer_keys:
+  cgst: CGST amount in rupees, 0 if none
+  sgst_utgst: SGST or UTGST amount in rupees, 0 if none
+  igst: IGST amount in rupees, 0 if none
+  invoice_total: invoice total including tax, in rupees
+  taxable_value: value before tax, in rupees
+expected:
+  taxable_value: 10000
+  cgst: 900
+  sgst_utgst: 900
+  igst: 0
+  invoice_total: 11800
+reference:
+  fn: gst_split_inclusive
+  args:
+    inclusive_value: 11800
+    rate_percent: 18
+    supplier_state: 08
+    pos_state: 08
+explanation: 'Rule 35: tax = inclusive value x rate / (100 + rate) = 11,800 x 18 / 118 = 1,800, split
+  equally into CGST and SGST.'
+sources:
+- title: 'CBIC: Frequently Asked Questions on GST (levy on intra-State and inter-State supplies)'
+  url: https://gstcouncil.gov.in/sites/default/files/2024-02/final-gst-fq-31218.pdf
+  type: official
+- title: 'CBIC: Central Goods and Services Tax Rules, 2017, Part A (rule 10 and rule 35)'
+  url: https://cbic-gst.gov.in/pdf/24092021-CGST-Rules-2017-Part-A-Rules.pdf
+  type: official
+verification: computed
+as_of: '2026-11-10'

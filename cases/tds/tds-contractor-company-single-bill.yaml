@@ -1,0 +1,35 @@
+id: tds-contractor-company-single-bill
+category: tds
+title: Works contract bill above Rs 30,000 to a company
+question: The payer is a private limited company and the payee is resident in India and has furnished
+  a PAN. The Income-tax Act, 2025 applies. On 15 May 2026 the company pays a single bill of Rs 40,000
+  to a contractor that is itself a company, for carrying out a works contract. It is the first payment
+  to this contractor in the tax year. How much tax must the company deduct at source from this payment,
+  and at what rate?
+answer_keys:
+  rate_percent: TDS rate applied, as a number; 0 if no tax is deductible
+  tds_amount: tax to deduct from this payment in rupees; 0 if none
+expected:
+  rate_percent: 2
+  tds_amount: 800
+reference:
+  fn: tds_amount
+  args:
+    amount: 40000
+    rate_percent: 2
+    single_threshold: 30000
+    aggregate_threshold: 100000
+explanation: 'Section 393(1), contractor entry: 2% where the payee is not an individual or HUF. A single
+  sum above Rs 30,000 triggers deduction. 2% of 40,000 is 800.'
+sources:
+- title: 'Pardeep Jha & Associates: TDS rate chart FY 2026-27, section 393'
+  url: https://pardeepjha.com/blog/tds-rate-chart-fy-2026-27-section-393-income-tax-act-2025
+  type: secondary
+- title: 'Durgesh Chavda: TDS rate chart 2026-27, Income-tax Act 2025'
+  url: https://www.durgeshchavda.com/insights/tds-rate-chart-2026-27/
+  type: secondary
+see_also:
+- title: 'Income Tax Department: section 393, Income-tax Act, 2025'
+  url: https://wm.incometaxindia.gov.in/w/section-393-5
+verification: secondary
+as_of: '2026-11-10'

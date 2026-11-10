@@ -1,0 +1,21 @@
+id: gstin-fourteen-characters
+category: gstin
+title: GSTIN that is one character short
+question: Could 08ABCDE1234F1Z be a valid GSTIN for a regular taxpayer registered with a PAN? Check the
+  length, the structure and the check digit. You are not asked whether it is actually registered.
+answer_keys:
+  valid: true or false
+expected:
+  valid: false
+reference:
+  fn: gstin_validate
+  args:
+    gstin: 08ABCDE1234F1Z
+explanation: 'A GSTIN has 15 characters: 2 for the State code, 10 for the PAN, 2 for the entity code and
+  1 checksum character. This one has 14.'
+sources:
+- title: 'CBIC: Central Goods and Services Tax Rules, 2017, Part A (rule 10 and rule 35)'
+  url: https://cbic-gst.gov.in/pdf/24092021-CGST-Rules-2017-Part-A-Rules.pdf
+  type: official
+verification: computed
+as_of: '2026-11-10'

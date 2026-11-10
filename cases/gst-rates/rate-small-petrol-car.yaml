@@ -1,0 +1,25 @@
+id: rate-small-petrol-car
+category: gst-rates
+title: Small petrol car
+question: A registered dealer in India sells a new petrol car with a 1,197 cc engine and a length of 3,995
+  mm. The supply is made, invoiced and paid for on 1 October 2025. What GST rate applies?
+answer_keys:
+  gst_rate_percent: the total GST rate as a number, for example 12 for 12%; use 0 for nil or exempt
+expected:
+  gst_rate_percent: 18
+stale_answer:
+  gst_rate_percent: 28
+explanation: Petrol, LPG and CNG cars with an engine up to 1,200 cc and a length up to 4,000 mm count
+  as small cars and moved from 28% to 18%.
+sources:
+- title: 'PIB: Recommendations of the 56th Meeting of the GST Council'
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&reg=48&lang=2
+  type: official
+- title: 'PIB: FAQs on the decisions of the 56th GST Council'
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163560&reg=3&lang=2
+  type: official
+verification: official
+as_of: '2026-11-10'
+law_effective_from: '2025-09-22'
+tags:
+- changed-rule

@@ -1,0 +1,21 @@
+id: rate-television-43-inch-oct-2025
+category: gst-rates
+title: Large television after the September 2025 rate change
+question: A registered dealer in India sells a 43 inch LED television. The supply is made, invoiced and
+  paid for on 1 October 2025. What GST rate applies?
+answer_keys:
+  gst_rate_percent: the total GST rate as a number, for example 12 for 12%; use 0 for nil or exempt
+expected:
+  gst_rate_percent: 18
+stale_answer:
+  gst_rate_percent: 28
+explanation: All televisions are at 18% from 22 September 2025. Larger sets were at 28% before.
+sources:
+- title: 'PIB: Recommendations of the 56th Meeting of the GST Council'
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&reg=48&lang=2
+  type: official
+verification: official
+as_of: '2026-11-10'
+law_effective_from: '2025-09-22'
+tags:
+- changed-rule

@@ -1,0 +1,20 @@
+id: rate-individual-health-insurance
+category: gst-rates
+title: Individual health insurance premium
+question: An insurer in India issues an individual health insurance policy to a resident individual and
+  charges a premium. The policy is issued and the premium is paid on 1 October 2025. What GST rate applies?
+answer_keys:
+  gst_rate_percent: the total GST rate as a number, for example 12 for 12%; use 0 for nil or exempt
+expected:
+  gst_rate_percent: 0
+explanation: Individual health insurance policies, including family floater and senior citizen policies,
+  are exempt from GST from 22 September 2025.
+sources:
+- title: 'PIB: Recommendations of the 56th Meeting of the GST Council'
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&reg=48&lang=2
+  type: official
+verification: official
+as_of: '2026-11-10'
+law_effective_from: '2025-09-22'
+tags:
+- changed-rule

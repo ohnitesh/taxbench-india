@@ -1,0 +1,22 @@
+id: einvoice-below-threshold
+category: einvoice
+title: Supplier that never crossed Rs 5 crore
+question: A trader's highest aggregate annual turnover (all GSTINs on its PAN) in any financial year since
+  2017-18 is Rs 4.2 crore. On 5 November 2026 it issues a tax invoice to another registered business.
+  Must it generate an e-invoice?
+answer_keys:
+  einvoice_required: true if the supplier must report this invoice to an IRP and obtain an IRN, otherwise
+    false
+expected:
+  einvoice_required: false
+explanation: Turnover has never exceeded Rs 5 crore in any financial year from 2017-18, so the e-invoicing
+  mandate does not apply.
+sources:
+- title: 'GST portal: Steps for e-Invoicing'
+  url: https://tutorial.gst.gov.in/downloads/news/e_invoice_overview.pdf
+  type: official
+- title: 'IRIS IRP: E-invoice mandate, exemptions, documents and transactions covered'
+  url: https://einvoice6.gst.gov.in/content/e-invoice-mandate-e-invoicing-changes-exemptions-documents-covered-transactions-and-more/
+  type: secondary
+verification: official
+as_of: '2026-11-10'

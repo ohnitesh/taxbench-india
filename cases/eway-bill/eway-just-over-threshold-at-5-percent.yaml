@@ -1,0 +1,29 @@
+id: eway-just-over-threshold-at-5-percent
+category: eway-bill
+title: Just over Rs 50,000 once 5% tax is added
+question: A registered supplier in Jaipur, Rajasthan sends ordinary taxable goods, which are not on any
+  e-way bill exemption list, by truck to a registered buyer in Bhopal, Madhya Pradesh. The invoice shows
+  a taxable value of Rs 47,700 plus IGST at 5%. Is an e-way bill mandatory for this movement, and what
+  is the consignment value for that test?
+answer_keys:
+  consignment_value: consignment value in rupees for the e-way bill test
+  eway_bill_required: true or false
+expected:
+  consignment_value: 50085
+  eway_bill_required: true
+reference:
+  fn: eway_required
+  args:
+    taxable_value: 47700
+    rate_percent: 5
+    threshold: 50000
+explanation: 47,700 + 2,385 = 50,085, which exceeds Rs 50,000.
+sources:
+- title: 'CBIC: FAQs on the E-way Bill system (threshold and meaning of consignment value)'
+  url: https://cbic-gst.gov.in/pdf/18062019-FAQs-EwayBill-Faq.pdf
+  type: official
+see_also:
+- title: 'CBIC tax information portal: rule 138, CGST Rules'
+  url: https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter16/rule138_v1.00.html
+verification: official
+as_of: '2026-11-10'

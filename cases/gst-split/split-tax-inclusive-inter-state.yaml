@@ -1,0 +1,35 @@
+id: split-tax-inclusive-inter-state
+category: gst-split
+title: Back out tax from a tax-inclusive price, inter-State
+question: A registered seller in Jaipur, Rajasthan ships goods to a registered buyer in Pune, Maharashtra
+  for Rs 5,250 inclusive of GST. The GST rate on the goods is 5%. Work out the value before tax and the
+  tax.
+answer_keys:
+  cgst: CGST amount in rupees, 0 if none
+  sgst_utgst: SGST or UTGST amount in rupees, 0 if none
+  igst: IGST amount in rupees, 0 if none
+  invoice_total: invoice total including tax, in rupees
+  taxable_value: value before tax, in rupees
+expected:
+  taxable_value: 5000
+  cgst: 0
+  sgst_utgst: 0
+  igst: 250
+  invoice_total: 5250
+reference:
+  fn: gst_split_inclusive
+  args:
+    inclusive_value: 5250
+    rate_percent: 5
+    supplier_state: 08
+    pos_state: '27'
+explanation: 'Rule 35: tax = 5,250 x 5 / 105 = 250. The supply is inter-State, so it is all IGST.'
+sources:
+- title: 'CBIC: Frequently Asked Questions on GST (levy on intra-State and inter-State supplies)'
+  url: https://gstcouncil.gov.in/sites/default/files/2024-02/final-gst-fq-31218.pdf
+  type: official
+- title: 'CBIC: Central Goods and Services Tax Rules, 2017, Part A (rule 10 and rule 35)'
+  url: https://cbic-gst.gov.in/pdf/24092021-CGST-Rules-2017-Part-A-Rules.pdf
+  type: official
+verification: computed
+as_of: '2026-11-10'

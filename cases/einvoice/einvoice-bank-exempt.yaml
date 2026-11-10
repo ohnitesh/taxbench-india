@@ -1,0 +1,21 @@
+id: einvoice-bank-exempt
+category: einvoice
+title: Banking company is exempt whatever its turnover
+question: A banking company with an aggregate annual turnover of Rs 800 crore issues a tax invoice to
+  a registered business customer on 5 November 2026. Must it generate an e-invoice?
+answer_keys:
+  einvoice_required: true if the supplier must report this invoice to an IRP and obtain an IRN, otherwise
+    false
+expected:
+  einvoice_required: false
+explanation: Banking companies, insurers and financial institutions including NBFCs are exempt from e-invoicing
+  regardless of turnover. The exemption attaches to the entity.
+sources:
+- title: 'IRIS IRP: E-invoice mandate, exemptions, documents and transactions covered'
+  url: https://einvoice6.gst.gov.in/content/e-invoice-mandate-e-invoicing-changes-exemptions-documents-covered-transactions-and-more/
+  type: secondary
+- title: 'Corporatewalla: E-invoicing turnover limit'
+  url: https://corporatewalla.com/blog/e-invoicing-turnover-limit-am-i-covered
+  type: secondary
+verification: secondary
+as_of: '2026-11-10'

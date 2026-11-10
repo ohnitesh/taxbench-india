@@ -1,0 +1,33 @@
+id: tds-rent-building-above-monthly-threshold
+category: tds
+title: Office rent above Rs 50,000 a month
+question: The payer is a private limited company and the payee is resident in India and has furnished
+  a PAN. The Income-tax Act, 2025 applies. On 1 June 2026 the company pays Rs 55,000 as rent for May 2026
+  for its office building to the landlord, a resident individual. How much tax must the company deduct
+  at source from this payment, and at what rate?
+answer_keys:
+  rate_percent: TDS rate applied, as a number; 0 if no tax is deductible
+  tds_amount: tax to deduct from this payment in rupees; 0 if none
+expected:
+  rate_percent: 10
+  tds_amount: 5500
+reference:
+  fn: tds_amount
+  args:
+    amount: 55000
+    rate_percent: 10
+    single_threshold: 50000
+explanation: 'Rent on land, building or furniture: 10% where rent exceeds Rs 50,000 for a month or part
+  of a month. 10% of 55,000 is 5,500.'
+sources:
+- title: 'Pardeep Jha & Associates: TDS rate chart FY 2026-27, section 393'
+  url: https://pardeepjha.com/blog/tds-rate-chart-fy-2026-27-section-393-income-tax-act-2025
+  type: secondary
+- title: 'Durgesh Chavda: TDS rate chart 2026-27, Income-tax Act 2025'
+  url: https://www.durgeshchavda.com/insights/tds-rate-chart-2026-27/
+  type: secondary
+see_also:
+- title: 'Income Tax Department: section 393, Income-tax Act, 2025'
+  url: https://wm.incometaxindia.gov.in/w/section-393-5
+verification: secondary
+as_of: '2026-11-10'

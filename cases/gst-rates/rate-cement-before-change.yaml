@@ -1,0 +1,20 @@
+id: rate-cement-before-change
+category: gst-rates
+title: Cement supplied before the rate change
+question: A registered dealer in India sells 50 bags of Portland cement. The supply is made, invoiced
+  and paid for on 1 September 2025. What GST rate applies?
+answer_keys:
+  gst_rate_percent: the total GST rate as a number, for example 12 for 12%; use 0 for nil or exempt
+expected:
+  gst_rate_percent: 28
+explanation: The cut from 28% to 18% took effect on 22 September 2025. A supply made, invoiced and paid
+  for on 1 September 2025 falls before that date, so 28% applies. This case checks that the agent reads
+  the date instead of quoting the newest rate.
+sources:
+- title: 'PIB: Recommendations of the 56th Meeting of the GST Council'
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&reg=48&lang=2
+  type: official
+verification: official
+as_of: '2026-11-10'
+tags:
+- date-sensitive

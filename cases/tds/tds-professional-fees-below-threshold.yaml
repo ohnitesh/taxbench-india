@@ -1,0 +1,39 @@
+id: tds-professional-fees-below-threshold
+category: tds
+title: Professional fees under Rs 50,000
+question: The payer is a private limited company and the payee is resident in India and has furnished
+  a PAN. The Income-tax Act, 2025 applies. On 15 May 2026 the company pays Rs 45,000 to a firm of chartered
+  accountants for professional services. It is the only payment to this firm in the tax year. How much
+  tax must the company deduct at source from this payment?
+answer_keys:
+  tds_amount: tax to deduct from this payment in rupees; 0 if none
+expected:
+  tds_amount: 0
+stale_answer:
+  tds_amount: 4500
+reference:
+  fn: tds_amount
+  args:
+    amount: 45000
+    rate_percent: 10
+    aggregate_threshold: 50000
+explanation: 'The threshold for professional fees is Rs 50,000. It was Rs 30,000 until 31 March 2025,
+  under which 10% of 45,000 would have been deducted: that is the outdated answer.'
+sources:
+- title: 'Pardeep Jha & Associates: TDS rate chart FY 2026-27, section 393'
+  url: https://pardeepjha.com/blog/tds-rate-chart-fy-2026-27-section-393-income-tax-act-2025
+  type: secondary
+- title: 'Durgesh Chavda: TDS rate chart 2026-27, Income-tax Act 2025'
+  url: https://www.durgeshchavda.com/insights/tds-rate-chart-2026-27/
+  type: secondary
+- title: 'ClearTax: TDS and TCS changes from April 2025 (old and new thresholds)'
+  url: https://cleartax.in/s/tds-and-tcs-changes-from-april-2025
+  type: secondary
+see_also:
+- title: 'Income Tax Department: section 393, Income-tax Act, 2025'
+  url: https://wm.incometaxindia.gov.in/w/section-393-5
+verification: secondary
+as_of: '2026-11-10'
+law_effective_from: '2025-04-01'
+tags:
+- changed-rule

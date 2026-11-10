@@ -1,0 +1,21 @@
+id: rate-uht-milk
+category: gst-rates
+title: UHT milk
+question: A registered dealer in India sells cartons of ultra-high temperature (UHT) milk. The supply
+  is made, invoiced and paid for on 1 October 2025. What GST rate applies?
+answer_keys:
+  gst_rate_percent: the total GST rate as a number, for example 12 for 12%; use 0 for nil or exempt
+expected:
+  gst_rate_percent: 0
+stale_answer:
+  gst_rate_percent: 5
+explanation: UHT milk moved from 5% to nil from 22 September 2025.
+sources:
+- title: 'PIB: Recommendations of the 56th Meeting of the GST Council'
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&reg=48&lang=2
+  type: official
+verification: official
+as_of: '2026-11-10'
+law_effective_from: '2025-09-22'
+tags:
+- changed-rule

@@ -1,0 +1,22 @@
+id: einvoice-crossed-in-an-earlier-year
+category: einvoice
+title: Turnover crossed Rs 5 crore years ago and has since fallen
+question: A trader's aggregate annual turnover (all GSTINs on its PAN) was Rs 7 crore in financial year
+  2019-20. In every year since then it has been under Rs 3 crore. It is not in any exempt category. On
+  5 November 2026 it issues a tax invoice to another registered business. Must it generate an e-invoice?
+answer_keys:
+  einvoice_required: true if the supplier must report this invoice to an IRP and obtain an IRN, otherwise
+    false
+expected:
+  einvoice_required: true
+explanation: The test looks at any preceding financial year from 2017-18, not only the latest one. Rs
+  7 crore in 2019-20 is above Rs 5 crore, so the mandate applies even though recent turnover is lower.
+sources:
+- title: 'GST portal: Steps for e-Invoicing'
+  url: https://tutorial.gst.gov.in/downloads/news/e_invoice_overview.pdf
+  type: official
+- title: 'Corporatewalla: E-invoicing turnover limit'
+  url: https://corporatewalla.com/blog/e-invoicing-turnover-limit-am-i-covered
+  type: secondary
+verification: official
+as_of: '2026-11-10'

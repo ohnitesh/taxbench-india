@@ -1,0 +1,22 @@
+id: einvoice-b2c-not-covered
+category: einvoice
+title: Invoice to an unregistered consumer
+question: A retailer's aggregate annual turnover was Rs 12 crore last financial year. On 5 November 2026
+  it sells goods to an unregistered individual consumer in India and issues a tax invoice. Must it report
+  this invoice to an Invoice Registration Portal and obtain an IRN?
+answer_keys:
+  einvoice_required: true if the supplier must report this invoice to an IRP and obtain an IRN, otherwise
+    false
+expected:
+  einvoice_required: false
+explanation: The mandate covers B2B supplies, supplies to SEZs, exports and deemed exports, plus credit
+  and debit notes. B2C invoices are not covered.
+sources:
+- title: 'IRIS IRP: E-invoice mandate, exemptions, documents and transactions covered'
+  url: https://einvoice6.gst.gov.in/content/e-invoice-mandate-e-invoicing-changes-exemptions-documents-covered-transactions-and-more/
+  type: secondary
+- title: 'GST portal: Steps for e-Invoicing'
+  url: https://tutorial.gst.gov.in/downloads/news/e_invoice_overview.pdf
+  type: official
+verification: secondary
+as_of: '2026-11-10'

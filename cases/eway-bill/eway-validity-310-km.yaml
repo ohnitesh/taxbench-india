@@ -1,0 +1,34 @@
+id: eway-validity-310-km
+category: eway-bill
+title: Validity for 310 km
+question: An e-way bill is generated on 5 November 2026 for ordinary (not over dimensional) cargo moved
+  by road over 310 km. For how many days is it valid?
+answer_keys:
+  validity_days: number of days the e-way bill is valid, as a whole number
+expected:
+  validity_days: 2
+stale_answer:
+  validity_days: 4
+reference:
+  fn: eway_validity_days
+  args:
+    distance_km: 310
+    km_per_day: 200
+explanation: 'Since 1 January 2021 (Notification 94/2020-Central Tax) validity is one day for every 200
+  km or part of it: 310 km gives 2 days. Under the earlier 100 km rule it was 4 days, and older official
+  FAQs still show that example.'
+sources:
+- title: 'StudyCafe: Notification 94/2020-Central Tax, validity changed from 100 km to 200 km per day'
+  url: https://studycafe.in/validity-of-e-way-bill-narrowed-by-increasing-distance-from-100-km-to-200-km-per-day-93584.html
+  type: secondary
+- title: 'Busy: Computing distance and e-way bill validity'
+  url: https://busy.in/gst/computing-distance-covered-determining-eway-bill-validity-its-extension/
+  type: secondary
+see_also:
+- title: 'CBIC tax information portal: rule 138, CGST Rules'
+  url: https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter16/rule138_v1.00.html
+verification: secondary
+as_of: '2026-11-10'
+law_effective_from: '2021-01-01'
+tags:
+- changed-rule

@@ -1,0 +1,33 @@
+id: tds-technical-services-fees
+category: tds
+title: Fees for technical services
+question: The payer is a private limited company and the payee is resident in India and has furnished
+  a PAN. The Income-tax Act, 2025 applies. On 15 May 2026 the company pays Rs 80,000 to a resident firm
+  as fees for technical services. It is the only payment to this firm in the tax year. How much tax must
+  the company deduct at source from this payment, and at what rate?
+answer_keys:
+  rate_percent: TDS rate applied, as a number; 0 if no tax is deductible
+  tds_amount: tax to deduct from this payment in rupees; 0 if none
+expected:
+  rate_percent: 2
+  tds_amount: 1600
+reference:
+  fn: tds_amount
+  args:
+    amount: 80000
+    rate_percent: 2
+    aggregate_threshold: 50000
+explanation: Fees for technical services carry 2%, not the 10% that applies to professional services.
+  The Rs 50,000 threshold is exceeded. 2% of 80,000 is 1,600.
+sources:
+- title: 'Pardeep Jha & Associates: TDS rate chart FY 2026-27, section 393'
+  url: https://pardeepjha.com/blog/tds-rate-chart-fy-2026-27-section-393-income-tax-act-2025
+  type: secondary
+- title: 'Durgesh Chavda: TDS rate chart 2026-27, Income-tax Act 2025'
+  url: https://www.durgeshchavda.com/insights/tds-rate-chart-2026-27/
+  type: secondary
+see_also:
+- title: 'Income Tax Department: section 393, Income-tax Act, 2025'
+  url: https://wm.incometaxindia.gov.in/w/section-393-5
+verification: secondary
+as_of: '2026-11-10'

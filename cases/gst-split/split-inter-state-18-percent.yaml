@@ -1,0 +1,34 @@
+id: split-inter-state-18-percent
+category: gst-split
+title: Inter-State sale at 18%
+question: A registered dealer in Jaipur, Rajasthan sells goods to a registered buyer in Ahmedabad, Gujarat.
+  The goods move from Jaipur and are delivered in Ahmedabad. The taxable value is Rs 1,50,000 and the
+  GST rate on these goods is 18%. Work out the tax on the invoice.
+answer_keys:
+  cgst: CGST amount in rupees, 0 if none
+  sgst_utgst: SGST or UTGST amount in rupees, 0 if none
+  igst: IGST amount in rupees, 0 if none
+  invoice_total: invoice total including tax, in rupees
+expected:
+  cgst: 0
+  sgst_utgst: 0
+  igst: 27000
+  invoice_total: 177000
+reference:
+  fn: gst_split
+  args:
+    taxable_value: 150000
+    rate_percent: 18
+    supplier_state: 08
+    pos_state: '24'
+explanation: The goods move from Rajasthan to Gujarat, so this is an inter-State supply and the whole
+  18% is IGST.
+sources:
+- title: 'CBIC: Frequently Asked Questions on GST (levy on intra-State and inter-State supplies)'
+  url: https://gstcouncil.gov.in/sites/default/files/2024-02/final-gst-fq-31218.pdf
+  type: official
+- title: 'CBIC: Central Goods and Services Tax Rules, 2017, Part A (rule 10 and rule 35)'
+  url: https://cbic-gst.gov.in/pdf/24092021-CGST-Rules-2017-Part-A-Rules.pdf
+  type: official
+verification: computed
+as_of: '2026-11-10'

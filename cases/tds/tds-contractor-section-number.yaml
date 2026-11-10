@@ -1,0 +1,30 @@
+id: tds-contractor-section-number
+category: tds
+title: Which section covers contractor TDS under the 2025 Act
+question: A company pays a resident contractor for a works contract on 15 May 2026. Under which section
+  of the Income-tax Act, 2025 is tax deducted at source from this payment? Give the main section number
+  only, as digits, ignoring sub-sections and table entries.
+answer_keys:
+  section_number: the main section number as a whole number, for example 80 for section 80(2)
+expected:
+  section_number: 393
+stale_answer:
+  section_number: 194
+explanation: The Income-tax Act, 2025 gathers the TDS provisions for payments to residents into section
+  393(1). Contractor payments are a table entry there. Section 194C belongs to the 1961 Act, which is
+  the outdated answer.
+sources:
+- title: 'Pardeep Jha & Associates: TDS rate chart FY 2026-27, section 393'
+  url: https://pardeepjha.com/blog/tds-rate-chart-fy-2026-27-section-393-income-tax-act-2025
+  type: secondary
+- title: 'Durgesh Chavda: TDS rate chart 2026-27, Income-tax Act 2025'
+  url: https://www.durgeshchavda.com/insights/tds-rate-chart-2026-27/
+  type: secondary
+see_also:
+- title: 'Income Tax Department: section 393, Income-tax Act, 2025'
+  url: https://wm.incometaxindia.gov.in/w/section-393-5
+verification: secondary
+as_of: '2026-11-10'
+law_effective_from: '2026-04-01'
+tags:
+- changed-rule

@@ -1,0 +1,21 @@
+id: rate-hotel-room-5000
+category: gst-rates
+title: Hotel room at Rs 5,000 a night
+question: A hotel in India provides accommodation priced at Rs 5,000 per room per day. The stay, the invoice
+  and the payment are all on 1 October 2025. What GST rate applies?
+answer_keys:
+  gst_rate_percent: the total GST rate as a number, for example 12 for 12%; use 0 for nil or exempt
+expected:
+  gst_rate_percent: 5
+stale_answer:
+  gst_rate_percent: 12
+explanation: Hotel accommodation valued up to Rs 7,500 per unit per day moved from 12% to 5%.
+sources:
+- title: 'PIB: Recommendations of the 56th Meeting of the GST Council'
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&reg=48&lang=2
+  type: official
+verification: official
+as_of: '2026-11-10'
+law_effective_from: '2025-09-22'
+tags:
+- changed-rule

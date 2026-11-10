@@ -1,0 +1,34 @@
+id: tds-contractor-individual-below-thresholds
+category: tds
+title: Individual contractor under both thresholds
+question: The payer is a private limited company and the payee is resident in India and has furnished
+  a PAN. The Income-tax Act, 2025 applies. On 15 May 2026 the company pays a bill of Rs 25,000 to an individual
+  contractor for carrying out a works contract. Earlier payments to this contractor in the same tax year
+  total Rs 60,000, each under Rs 30,000, with no tax deducted. How much tax must the company deduct at
+  source from this payment?
+answer_keys:
+  tds_amount: tax to deduct from this payment in rupees; 0 if none
+expected:
+  tds_amount: 0
+reference:
+  fn: tds_amount
+  args:
+    amount: 25000
+    rate_percent: 1
+    single_threshold: 30000
+    aggregate_threshold: 100000
+    prior_aggregate: 60000
+explanation: The bill does not exceed Rs 30,000 and the year's total of Rs 85,000 does not exceed Rs 1,00,000,
+  so nothing is deductible.
+sources:
+- title: 'Pardeep Jha & Associates: TDS rate chart FY 2026-27, section 393'
+  url: https://pardeepjha.com/blog/tds-rate-chart-fy-2026-27-section-393-income-tax-act-2025
+  type: secondary
+- title: 'Durgesh Chavda: TDS rate chart 2026-27, Income-tax Act 2025'
+  url: https://www.durgeshchavda.com/insights/tds-rate-chart-2026-27/
+  type: secondary
+see_also:
+- title: 'Income Tax Department: section 393, Income-tax Act, 2025'
+  url: https://wm.incometaxindia.gov.in/w/section-393-5
+verification: secondary
+as_of: '2026-11-10'

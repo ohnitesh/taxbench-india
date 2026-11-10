@@ -1,0 +1,33 @@
+id: split-intra-state-paise
+category: gst-split
+title: Intra-State split that lands on paise
+question: A registered dealer in Udaipur, Rajasthan sells goods to a registered buyer in Jodhpur, Rajasthan,
+  delivered in Jodhpur. The taxable value is Rs 1,250 and the GST rate is 5%. Work out the tax on the
+  invoice. Give amounts to two decimal places.
+answer_keys:
+  cgst: CGST amount in rupees, 0 if none
+  sgst_utgst: SGST or UTGST amount in rupees, 0 if none
+  igst: IGST amount in rupees, 0 if none
+  invoice_total: invoice total including tax, in rupees
+expected:
+  cgst: 31.25
+  sgst_utgst: 31.25
+  igst: 0
+  invoice_total: 1312.5
+reference:
+  fn: gst_split
+  args:
+    taxable_value: 1250
+    rate_percent: 5
+    supplier_state: 08
+    pos_state: 08
+explanation: 5% of 1,250 is 62.50, split as 31.25 CGST and 31.25 SGST.
+sources:
+- title: 'CBIC: Frequently Asked Questions on GST (levy on intra-State and inter-State supplies)'
+  url: https://gstcouncil.gov.in/sites/default/files/2024-02/final-gst-fq-31218.pdf
+  type: official
+- title: 'CBIC: Central Goods and Services Tax Rules, 2017, Part A (rule 10 and rule 35)'
+  url: https://cbic-gst.gov.in/pdf/24092021-CGST-Rules-2017-Part-A-Rules.pdf
+  type: official
+verification: computed
+as_of: '2026-11-10'

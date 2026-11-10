@@ -1,0 +1,21 @@
+id: gstin-wrong-check-digit
+category: gstin
+title: GSTIN whose last character fails the check
+question: Could 08ABCDE1234F1Z5 be a valid GSTIN for a regular taxpayer registered with a PAN? Check the
+  length, the structure and the check digit. You are not asked whether it is actually registered.
+answer_keys:
+  valid: true or false
+expected:
+  valid: false
+reference:
+  fn: gstin_validate
+  args:
+    gstin: 08ABCDE1234F1Z5
+explanation: The first 14 characters give check digit 0, not 5. Everything else about the number looks
+  right, which is what makes this a useful test.
+sources:
+- title: 'CBIC: Central Goods and Services Tax Rules, 2017, Part A (rule 10 and rule 35)'
+  url: https://cbic-gst.gov.in/pdf/24092021-CGST-Rules-2017-Part-A-Rules.pdf
+  type: official
+verification: computed
+as_of: '2026-11-10'

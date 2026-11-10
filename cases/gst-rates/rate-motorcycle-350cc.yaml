@@ -1,0 +1,25 @@
+id: rate-motorcycle-350cc
+category: gst-rates
+title: Motorcycle of exactly 350 cc
+question: A registered dealer in India sells a new motorcycle with an engine capacity of exactly 350 cc.
+  The supply is made, invoiced and paid for on 1 October 2025. What GST rate applies?
+answer_keys:
+  gst_rate_percent: the total GST rate as a number, for example 12 for 12%; use 0 for nil or exempt
+expected:
+  gst_rate_percent: 18
+stale_answer:
+  gst_rate_percent: 28
+explanation: Motorcycles up to 350 cc are at 18%. The 40% rate applies only to motorcycles exceeding 350
+  cc, so a 350 cc model is at 18%.
+sources:
+- title: 'PIB: Recommendations of the 56th Meeting of the GST Council'
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&reg=48&lang=2
+  type: official
+- title: 'PIB: FAQs on the decisions of the 56th GST Council'
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163560&reg=3&lang=2
+  type: official
+verification: official
+as_of: '2026-11-10'
+law_effective_from: '2025-09-22'
+tags:
+- changed-rule

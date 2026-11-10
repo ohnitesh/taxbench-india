@@ -1,0 +1,22 @@
+id: gstin-pan-shape-broken
+category: gstin
+title: Check digit is right but the PAN block is not PAN-shaped
+question: Could 24AB1DE1234F1ZH be a valid GSTIN for a regular taxpayer registered with a PAN? Check the
+  length, the structure and the check digit. You are not asked whether it is actually registered.
+answer_keys:
+  valid: true or false
+expected:
+  valid: false
+reference:
+  fn: gstin_validate
+  args:
+    gstin: 24AB1DE1234F1ZH
+explanation: 'Characters 3 to 12 must be a PAN: five letters, four digits, one letter. Here the fifth
+  character is a digit. The check digit H is correct for these 14 characters, so a validator that only
+  tests the checksum will wrongly accept it.'
+sources:
+- title: 'CBIC: Central Goods and Services Tax Rules, 2017, Part A (rule 10 and rule 35)'
+  url: https://cbic-gst.gov.in/pdf/24092021-CGST-Rules-2017-Part-A-Rules.pdf
+  type: official
+verification: computed
+as_of: '2026-11-10'

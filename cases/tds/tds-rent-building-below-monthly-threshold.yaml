@@ -1,0 +1,39 @@
+id: tds-rent-building-below-monthly-threshold
+category: tds
+title: Office rent under Rs 50,000 a month
+question: The payer is a private limited company and the payee is resident in India and has furnished
+  a PAN. The Income-tax Act, 2025 applies. On 1 June 2026 the company pays Rs 45,000 as rent for May 2026
+  for its office building to the landlord, a resident individual. The rent is Rs 45,000 every month. How
+  much tax must the company deduct at source from this payment?
+answer_keys:
+  tds_amount: tax to deduct from this payment in rupees; 0 if none
+expected:
+  tds_amount: 0
+stale_answer:
+  tds_amount: 4500
+reference:
+  fn: tds_amount
+  args:
+    amount: 45000
+    rate_percent: 10
+    single_threshold: 50000
+explanation: 'The threshold is Rs 50,000 a month. Until 31 March 2025 it was Rs 2,40,000 a year, which
+  Rs 45,000 a month would have crossed: that is the outdated answer.'
+sources:
+- title: 'Pardeep Jha & Associates: TDS rate chart FY 2026-27, section 393'
+  url: https://pardeepjha.com/blog/tds-rate-chart-fy-2026-27-section-393-income-tax-act-2025
+  type: secondary
+- title: 'Durgesh Chavda: TDS rate chart 2026-27, Income-tax Act 2025'
+  url: https://www.durgeshchavda.com/insights/tds-rate-chart-2026-27/
+  type: secondary
+- title: 'ClearTax: TDS and TCS changes from April 2025 (old and new thresholds)'
+  url: https://cleartax.in/s/tds-and-tcs-changes-from-april-2025
+  type: secondary
+see_also:
+- title: 'Income Tax Department: section 393, Income-tax Act, 2025'
+  url: https://wm.incometaxindia.gov.in/w/section-393-5
+verification: secondary
+as_of: '2026-11-10'
+law_effective_from: '2025-04-01'
+tags:
+- changed-rule

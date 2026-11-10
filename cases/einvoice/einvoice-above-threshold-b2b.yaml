@@ -1,0 +1,28 @@
+id: einvoice-above-threshold-b2b
+category: einvoice
+title: B2B invoice by a supplier above Rs 5 crore
+question: A manufacturer's aggregate annual turnover (all GSTINs on its PAN) was Rs 6.2 crore in financial
+  year 2023-24 and lower in every other year since 2017-18. It is not in any exempt category. On 5 November
+  2026 it issues a tax invoice to another registered business. Must it generate an e-invoice?
+answer_keys:
+  einvoice_required: true if the supplier must report this invoice to an IRP and obtain an IRN, otherwise
+    false
+expected:
+  einvoice_required: true
+stale_answer:
+  einvoice_required: false
+explanation: E-invoicing applies where aggregate turnover in any financial year from 2017-18 exceeds Rs
+  5 crore. The limit has been Rs 5 crore since 1 August 2023 (Notification 10/2023-Central Tax). It was
+  Rs 10 crore before that, which is the outdated answer.
+sources:
+- title: 'GST portal: Steps for e-Invoicing'
+  url: https://tutorial.gst.gov.in/downloads/news/e_invoice_overview.pdf
+  type: official
+- title: 'IRIS IRP: E-invoice mandate, exemptions, documents and transactions covered'
+  url: https://einvoice6.gst.gov.in/content/e-invoice-mandate-e-invoicing-changes-exemptions-documents-covered-transactions-and-more/
+  type: secondary
+verification: official
+as_of: '2026-11-10'
+law_effective_from: '2023-08-01'
+tags:
+- changed-rule

@@ -1,0 +1,23 @@
+id: gstin-valid-check-digit
+category: gstin
+title: Well-formed GSTIN with the right check digit
+question: Could 08ABCDE1234F1Z0 be a valid GSTIN for a regular taxpayer registered with a PAN? Check the
+  length, the structure and the check digit. You are not asked whether it is actually registered.
+answer_keys:
+  valid: true or false
+expected:
+  valid: true
+reference:
+  fn: gstin_validate
+  args:
+    gstin: 08ABCDE1234F1Z0
+explanation: State code 08, a PAN-shaped block, entity code 1, the default Z, and check digit 0, which
+  is what the mod 36 calculation gives for the first 14 characters. Rule 10 fixes the structure. The checksum
+  method is not written in the Rules, so the reference calculator is tested against a published sample
+  GSTIN.
+sources:
+- title: 'CBIC: Central Goods and Services Tax Rules, 2017, Part A (rule 10 and rule 35)'
+  url: https://cbic-gst.gov.in/pdf/24092021-CGST-Rules-2017-Part-A-Rules.pdf
+  type: official
+verification: computed
+as_of: '2026-11-10'
